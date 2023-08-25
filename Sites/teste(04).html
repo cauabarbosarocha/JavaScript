@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gosta de animes?</title>
+</head>
+<body>
+  <h1>Qual seu anime favorito?</h1>
+  <h2>Digite um anime</h2>
+  <input type="text" name="txtAn" id="txtAn">
+  <input type="button" value="Confirmar" onclick="clicar()">
+  <div id="res"></div>
+  <script>
+    var nome = window.prompt("Qual seu nome?")
+    function clicar() {
+        var an1 = window.document.getElementById("txtAn").value
+        var nao = 'Não assisto animes'
+        var resposta = window.document.getElementById("res")
+        if (an1 != nao) {
+            res.innerHTML = `Seu anime favorito é ${an1}`
+        } else {
+            res.innerHTML = `Como você conseguiu ter vida ${nome}????`
+        }
+
+    }
+
+  </script>
+</body>
+</html>
